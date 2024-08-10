@@ -18,7 +18,8 @@ class Square(Function):
     def forward(self, x):
         return x**2
 
-x = Variable(np.array(10))
+x = Variable(np.array([[10.0, 20.0], 
+                   [30.0, 40.0]]))
 f = Square()
 y = f(x)
 
