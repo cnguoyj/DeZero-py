@@ -30,12 +30,11 @@ class Square(Function):
 
 class Exp(Function):
     def forward(self,x):
-        y = np.exp(x)
-        return y
+        return np.exp(x)
 
     def backward(self,gy):
         x = self.input.data
-        gx = np.exp(x)*gy
+        gx = np.exp(x) * gy
         return gx
 
 A = Square()
